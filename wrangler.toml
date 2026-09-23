@@ -1,0 +1,20 @@
+name = "feedcasket"
+main = "src/index.ts"
+compatibility_date = "2024-02-08"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "feedcasket-db"
+database_id = "00000000-0000-0000-0000-000000000000" # Replace with actual DB ID during setup
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "SCREENSHOTS"
+bucket_name = "feedcasket-screenshots"
+
+[vars]
+ENVIRONMENT = "production"
+
+[env.dev]
+# Additional configuration for dev if needed
