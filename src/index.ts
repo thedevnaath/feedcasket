@@ -3,7 +3,6 @@ import { cors } from 'hono/cors';
 
 export type Bindings = {
   DB: D1Database;
-  SCREENSHOTS: R2Bucket;
   ENVIRONMENT: string;
 };
 
