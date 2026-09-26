@@ -6,12 +6,12 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "feedcasket-db"
-database_id = "00000000-0000-0000-0000-000000000000" # Replace with actual DB ID during setup
+database_id = "f24deb01-02c1-4985-b99e-0bdcd91bcb17"
 migrations_dir = "migrations"
 
-[[r2_buckets]]
-binding = "SCREENSHOTS"
-bucket_name = "feedcasket-screenshots"
+# [[r2_buckets]]
+# binding = "SCREENSHOTS"
+# bucket_name = "feedcasket-screenshots"
 
 [vars]
 ENVIRONMENT = "production"
