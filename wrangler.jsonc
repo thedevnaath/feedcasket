@@ -1,13 +1,22 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	"compatibility_date": "2026-10-12",
-	"compatibility_flags": ["global_fetch_strictly_public"],
+	"compatibility_flags": [
+		"global_fetch_strictly_public"
+	],
 	"name": "feedcasket",
 	"main": "./src/app.ts",
 	"assets": {
 		"directory": "./dist",
 		"binding": "ASSETS"
 	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "feedcasket-db",
+			"database_id": "YOUR_DATABASE_ID"
+		}
+	],
 	"observability": {
 		"enabled": true
 	}
